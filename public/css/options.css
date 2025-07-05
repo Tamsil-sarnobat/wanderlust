@@ -1,0 +1,174 @@
+
+    
+    #filters{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .filter{
+        text-align: center;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        opacity: 0.7;
+    }
+
+    .filter:hover{
+        opacity: 1;
+        cursor: pointer;
+        text-decoration: underline solid rgb(99, 98, 98);
+    }
+
+    .filter p {
+        font-size: 0.8rem;
+    }
+
+    .tax-info{
+        display: none;
+    }
+
+    .taxSwitch{ 
+        position: absolute;
+        top:7rem;
+        border:1px solid black;
+        border-radius: 1rem;
+        height: 3rem;
+        width:20%;
+        padding: 1rem;
+        margin-left: 58rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow-y: hidden;
+    }
+
+
+    @media(max-width:1288px){
+        .hideOp{
+            display: none;
+        }
+
+        .taxSwitch{
+           
+            width:25%;
+            padding: 0.50rem;
+            margin-left: 50rem;
+           
+        }        
+    }
+
+        @media(max-width:1200px){
+        .hideOp1{
+            display: none;
+        }
+        .taxSwitch{
+           
+            width:25%;
+            padding: 0.50rem;
+            margin-left: 40rem;
+           
+        }
+
+    }
+
+
+    .option-btn{
+        display: none;
+        background-color: #fe424d;
+        color:#fff;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+    }
+
+   .hideOptions{
+     position: absolute;
+     top:5.5rem;
+ 
+   }
+
+    @media(max-width:993px){
+       .option-btn{
+          display: flex;
+          margin-top:1.4rem;
+       }
+       .option-btn:hover{
+        background-color: #fe424d;
+        color: #fff;
+       }
+
+       .filter{
+        display: none;
+        margin-top:2rem;   
+       }
+
+        #filters{
+            margin-top: 6rem;
+            max-width:100%;
+        }
+
+        .taxSwitch{
+            position: absolute;
+       
+            top:6rem;
+            width:30%;
+            padding: 0.75rem;
+            margin-top:1rem;
+            margin-left: 25rem;
+           
+        } 
+        .tax-btn{
+            display: none;
+        }      
+    }
+
+
+
+    @media(max-width:800px){
+        .taxSwitch{
+            position: absolute;
+         
+            top:6rem;
+            width:30%;
+            padding: 0.75rem;
+            margin-top:1rem;
+            margin-left: 28rem;
+           
+        }       
+    }
+
+    .hideOptions{
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+@media(max-width:790px){
+    .taxSwitch{
+        display: none;
+    }
+    .tax-btn{
+        display: flex;
+        transform: translateX(300px);
+    }
+}
+
+@media(max-width:520px){
+    .taxSwitch{
+        display: none;
+    }
+    .tax-btn{
+        transform: translateX(100px);
+        margin-top:1.5rem;
+    }
+}
+
+@media(max-width:360px){
+    .taxSwitch{
+        display: none;
+    }
+    .tax-btn{
+        transform: translateX(30px);
+    }
+}
