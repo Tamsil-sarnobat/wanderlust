@@ -41,7 +41,7 @@
         justify-content: space-evenly;
         overflow-y: hidden;
     }
-
+/* 
 
     @media(max-width:1288px){
         .hideOp{
@@ -171,4 +171,4 @@
     .tax-btn{
         transform: translateX(30px);
     }
-}
+} */
